@@ -2,8 +2,79 @@
   box-sizing: border-box;
 }
 
+html,
 body {
+  min-width: 320px;
+}
+
+.web-container {
+  font-family: "League Spartan", sans-serif;
   min-height: 100vh;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header .left-up-section h1 {
+  margin-bottom: 2rem;
+  color: hsl(300, 43%, 22%);
+  font-weight: bolder;
+  padding: 15px 20px;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+header .ratings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+header .ratings div {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 1rem;
+  width: 80%;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+main,
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 2rem;
+}
+main .box,
+div .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  line-height: 1.5rem;
+  background-color: hsl(300, 43%, 22%);
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+main .box figure,
+main .box img,
+div .box figure,
+div .box img {
+  border-radius: 50%;
+  transform: scale(0.8);
+}
+main .box h1,
+div .box h1 {
+  color: white;
+}
+main .box h2,
+div .box h2 {
+  color: hsl(333, 80%, 67%);
+}
+main .box p,
+div .box p {
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
